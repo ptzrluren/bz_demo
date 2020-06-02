@@ -1,15 +1,13 @@
 package com.flc.controller.foodinfo;
 
-import java.io.PrintWriter;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import javax.annotation.Resource;
-
+import com.alibaba.druid.util.StringUtils;
+import com.flc.controller.base.BaseController;
+import com.flc.entity.Page;
+import com.flc.service.foodinfo.GraphicListManager;
+import com.flc.util.AppUtil;
+import com.flc.util.Jurisdiction;
+import com.flc.util.ObjectExcelView;
+import com.flc.util.PageData;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
@@ -19,15 +17,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.alibaba.druid.util.StringUtils;
-import com.flc.controller.base.BaseController;
-import com.flc.entity.Page;
-import com.flc.service.foodinfo.GraphicListManager;
-import com.flc.util.AppUtil;
-import com.flc.util.ObjectExcelView;
-import com.flc.util.PageData;
-import com.flc.util.Jurisdiction;
-import com.flc.util.Tools;
+import javax.annotation.Resource;
+import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /** 
  * 说明：商品图文列表维护

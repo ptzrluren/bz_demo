@@ -1,14 +1,13 @@
 package com.flc.controller.system.buttonrights;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
+import com.flc.controller.base.BaseController;
+import com.flc.entity.system.Role;
+import com.flc.service.system.buttonrights.ButtonrightsManager;
+import com.flc.service.system.fhbutton.FhbuttonManager;
+import com.flc.service.system.role.RoleManager;
+import com.flc.util.AppUtil;
+import com.flc.util.Jurisdiction;
+import com.flc.util.PageData;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
@@ -17,14 +16,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.flc.controller.base.BaseController;
-import com.flc.entity.system.Role;
-import com.flc.util.AppUtil;
-import com.flc.util.PageData;
-import com.flc.util.Jurisdiction;
-import com.flc.service.system.buttonrights.ButtonrightsManager;
-import com.flc.service.system.fhbutton.FhbuttonManager;
-import com.flc.service.system.role.RoleManager;
+import javax.annotation.Resource;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /** 
  * 说明：按钮权限

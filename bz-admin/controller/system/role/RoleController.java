@@ -1,15 +1,18 @@
 package com.flc.controller.system.role;
 
-import java.io.PrintWriter;
-import java.math.BigInteger;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
+import com.flc.controller.base.BaseController;
+import com.flc.entity.system.Menu;
+import com.flc.entity.system.Role;
+import com.flc.service.system.appuser.AppuserManager;
+import com.flc.service.system.menu.MenuManager;
+import com.flc.service.system.role.RoleManager;
+import com.flc.service.system.user.UserManager;
+import com.flc.util.AppUtil;
+import com.flc.util.Jurisdiction;
+import com.flc.util.PageData;
+import com.flc.util.RightsHelper;
+import com.flc.util.Tools;
 import net.sf.json.JSONArray;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,18 +21,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.flc.controller.base.BaseController;
-import com.flc.entity.system.Menu;
-import com.flc.entity.system.Role;
-import com.flc.service.system.appuser.AppuserManager;
-import com.flc.service.system.role.RoleManager;
-import com.flc.service.system.user.UserManager;
-import com.flc.service.system.menu.MenuManager;
-import com.flc.util.AppUtil;
-import com.flc.util.Jurisdiction;
-import com.flc.util.PageData;
-import com.flc.util.RightsHelper;
-import com.flc.util.Tools;
+import javax.annotation.Resource;
+import java.io.PrintWriter;
+import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /** 
  * 类名称：RoleController 角色权限管理
  * 创建人：FLC

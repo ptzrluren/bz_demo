@@ -1,14 +1,14 @@
 package com.flc.controller.app.order;
 
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.alibaba.fastjson.JSON;
+import com.flc.controller.base.BaseController;
+import com.flc.enums.ExEnum;
+import com.flc.exception.NjmsException;
+import com.flc.service.order.OrderErrandsManager;
+import com.flc.service.user.UserManager;
+import com.flc.util.DateUtil;
+import com.flc.util.PageData;
+import com.flc.util.Tools;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,18 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.alibaba.fastjson.JSON;
-import com.flc.controller.base.BaseController;
-import com.flc.enums.ExEnum;
-import com.flc.exception.NjmsException;
-import com.flc.service.order.OrderErrandsManager;
-import com.flc.service.user.UserManager;
-import com.flc.util.Const;
-import com.flc.util.DateUtil;
-import com.flc.util.JGPushUtil;
-import com.flc.util.PageData;
-import com.flc.util.SmsUtil;
-import com.flc.util.Tools;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /** 
  * 说明：私人订制订单

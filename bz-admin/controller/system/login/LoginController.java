@@ -1,13 +1,24 @@
 package com.flc.controller.system.login;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-
+import com.flc.controller.base.BaseController;
+import com.flc.entity.system.Menu;
+import com.flc.entity.system.Role;
+import com.flc.entity.system.User;
+import com.flc.service.fhoa.datajur.DatajurManager;
+import com.flc.service.merchant.BusinessManager;
+import com.flc.service.system.appuser.AppuserManager;
+import com.flc.service.system.buttonrights.ButtonrightsManager;
+import com.flc.service.system.fhbutton.FhbuttonManager;
+import com.flc.service.system.menu.MenuManager;
+import com.flc.service.system.role.RoleManager;
+import com.flc.service.system.user.UserManager;
+import com.flc.util.AppUtil;
+import com.flc.util.Const;
+import com.flc.util.DateUtil;
+import com.flc.util.Jurisdiction;
+import com.flc.util.PageData;
+import com.flc.util.RightsHelper;
+import com.flc.util.Tools;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -20,25 +31,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.flc.controller.base.BaseController;
-import com.flc.service.fhoa.datajur.DatajurManager;
-import com.flc.service.merchant.BusinessManager;
-import com.flc.service.system.appuser.AppuserManager;
-import com.flc.service.system.buttonrights.ButtonrightsManager;
-import com.flc.service.system.fhbutton.FhbuttonManager;
-import com.flc.service.system.menu.MenuManager;
-import com.flc.entity.system.Menu;
-import com.flc.entity.system.Role;
-import com.flc.entity.system.User;
-import com.flc.service.system.role.RoleManager;
-import com.flc.service.system.user.UserManager;
-import com.flc.util.AppUtil;
-import com.flc.util.Const;
-import com.flc.util.DateUtil;
-import com.flc.util.Jurisdiction;
-import com.flc.util.PageData;
-import com.flc.util.RightsHelper;
-import com.flc.util.Tools;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /**
  * 总入口
  * @author fh QQ 3 1 3 5 9 6 7 9 0[青苔]

@@ -1,18 +1,14 @@
 package com.flc.controller.reg;
 
-import java.net.URLEncoder;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
+import com.flc.controller.base.BaseController;
+import com.flc.service.merchant.BusinessManager;
+import com.flc.service.system.user.UserManager;
+import com.flc.util.AppUtil;
+import com.flc.util.Const;
+import com.flc.util.PageData;
+import com.flc.util.SmsUtil;
+import com.flc.util.Tools;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
@@ -22,15 +18,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.flc.controller.base.BaseController;
-import com.flc.service.merchant.BusinessManager;
-import com.flc.service.system.user.UserManager;
-import com.flc.util.AppUtil;
-import com.flc.util.Const;
-import com.flc.util.Jurisdiction;
-import com.flc.util.PageData;
-import com.flc.util.SmsUtil;
-import com.flc.util.Tools;
+import javax.annotation.Resource;
+import java.net.URLEncoder;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /** 
  * 说明：

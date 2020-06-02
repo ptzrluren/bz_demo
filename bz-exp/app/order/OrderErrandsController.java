@@ -1,17 +1,16 @@
 package com.flc.controller.app.order;
 
+import com.flc.controller.base.BaseController;
+import com.flc.enums.ExEnum;
+import com.flc.exception.NjmsException;
+import com.flc.service.order.OrderErrandsManager;
+import com.flc.util.PageData;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.flc.controller.base.BaseController;
-import com.flc.enums.ExEnum;
-import com.flc.exception.NjmsException;
-import com.flc.service.order.OrderErrandsManager;
-import com.flc.util.PageData;
 
 /** 
  * 说明：私人订制订单

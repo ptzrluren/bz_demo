@@ -1,20 +1,5 @@
 package com.flc.controller.system.menu;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import net.sf.json.JSONArray;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.flc.controller.base.BaseController;
 import com.flc.entity.system.Menu;
 import com.flc.service.system.menu.MenuManager;
@@ -23,6 +8,18 @@ import com.flc.util.Const;
 import com.flc.util.Jurisdiction;
 import com.flc.util.PageData;
 import com.flc.util.RightsHelper;
+import net.sf.json.JSONArray;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /** 
  * 类名称：MenuController 菜单处理
  * 创建人：FH 

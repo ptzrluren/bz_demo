@@ -1,16 +1,14 @@
 package com.flc.controller.app.message;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.flc.controller.base.BaseController;
 import com.flc.enums.ExEnum;
 import com.flc.exception.NjmsException;
 import com.flc.service.message.MessageManager;
-import com.flc.service.user.UserManager;
 import com.flc.util.PageData;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(value="/app/message")

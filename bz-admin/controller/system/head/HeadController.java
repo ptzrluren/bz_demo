@@ -1,18 +1,5 @@
 package com.flc.controller.system.head;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
-import org.apache.shiro.session.Session;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.flc.controller.base.BaseController;
 import com.flc.service.system.appuser.AppuserManager;
 import com.flc.service.system.fhsms.FhsmsManager;
@@ -24,6 +11,17 @@ import com.flc.util.PageData;
 import com.flc.util.SmsUtil;
 import com.flc.util.Tools;
 import com.flc.util.mail.SimpleMailSender;
+import org.apache.shiro.session.Session;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /** 
  * 类名称：HeadController

@@ -1,19 +1,17 @@
 package com.flc.controller.merchant;
 
-import java.util.List;
-
-import javax.annotation.Resource;
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.flc.controller.base.BaseController;
 import com.flc.entity.Page;
 import com.flc.service.merchant.BusinessManager;
 import com.flc.util.Jurisdiction;
 import com.flc.util.PageData;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import java.util.List;
 
 @Controller
 @RequestMapping(value="/storeBusiness")

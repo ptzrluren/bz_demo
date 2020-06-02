@@ -1,16 +1,12 @@
 package com.flc.controller.system.dictionaries;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
-
+import com.flc.controller.base.BaseController;
+import com.flc.entity.Page;
+import com.flc.service.system.dictionaries.DictionariesManager;
+import com.flc.util.AppUtil;
+import com.flc.util.Jurisdiction;
+import com.flc.util.PageData;
 import net.sf.json.JSONArray;
-
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,12 +17,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.flc.controller.base.BaseController;
-import com.flc.entity.Page;
-import com.flc.util.AppUtil;
-import com.flc.util.PageData;
-import com.flc.util.Jurisdiction;
-import com.flc.service.system.dictionaries.DictionariesManager;
+import javax.annotation.Resource;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /** 
  * 说明：数据字典

@@ -1,6 +1,22 @@
 package com.flc.controller.system.tools;
 
 
+import com.flc.controller.base.BaseController;
+import com.flc.util.AppUtil;
+import com.flc.util.Const;
+import com.flc.util.DelAllFile;
+import com.flc.util.FileDownload;
+import com.flc.util.Freemarker;
+import com.flc.util.MapDistance;
+import com.flc.util.PageData;
+import com.flc.util.PathUtil;
+import com.flc.util.TwoDimensionCode;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -8,25 +24,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.flc.controller.base.BaseController;
-import com.flc.util.AppUtil;
-import com.flc.util.Const;
-import com.flc.util.DelAllFile;
-import com.flc.util.FileDownload;
-import com.flc.util.FileZip;
-import com.flc.util.Freemarker;
-import com.flc.util.MapDistance;
-import com.flc.util.PageData;
-import com.flc.util.PathUtil;
-import com.flc.util.TwoDimensionCode;
 
 /** 
  * 类名称：ToolController 系统工具

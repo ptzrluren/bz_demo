@@ -1,13 +1,12 @@
 package com.flc.controller.app.common;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.flc.controller.base.BaseController;
 import com.flc.enums.ExEnum;
 import com.flc.util.Const;
 import com.flc.util.PageData;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 
 /**
