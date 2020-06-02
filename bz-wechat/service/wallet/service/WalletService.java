@@ -1,10 +1,5 @@
 package com.flc.service.wallet.service;
 
-import javax.annotation.Resource;
-
-import org.apache.commons.lang.StringUtils;
-import org.springframework.stereotype.Service;
-
 import com.flc.dao.DaoSupport;
 import com.flc.enums.ExEnum;
 import com.flc.exception.NjmsException;
@@ -12,6 +7,10 @@ import com.flc.service.userwalletlog.impl.UserWalletLogService;
 import com.flc.service.wallet.WalletManager;
 import com.flc.util.Const;
 import com.flc.util.PageData;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 @Service("walletService")
 public class WalletService implements WalletManager {
